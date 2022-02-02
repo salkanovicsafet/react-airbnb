@@ -6,7 +6,6 @@
 
 body {
   margin: 0;
-  background-color: rgb(194, 194, 194);
 }
 
 .nav {
@@ -14,14 +13,12 @@ body {
   width: 100vw;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   padding: 22px 30px;
-  background-color: #ffffff;
   z-index: 1;
 }
 
 .container {
   width: 60%;
   margin: 0px auto;
-  background-color: #ffffff;
 }
 
 .nav--logo {
