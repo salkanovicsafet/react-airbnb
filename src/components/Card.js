@@ -4,7 +4,10 @@ import Star from "../assets/images/Star.png";
 export default function Card() {
   return (
     <div className="card">
-      <img src={Katie} alt="Katie Zaferes" className="card--img" />
+      <div className="image-wrapper">
+        <img src={Katie} alt="Katie Zaferes" className="card--img" />
+        <div class="card--img--status">SOLD OUT</div>
+      </div>
       <div className="card--details">
         <div className="card--details--reviews">
           <img
@@ -14,7 +17,7 @@ export default function Card() {
           />
           <div className="card--details--reviews--rating">5.0</div>
           <div className="card--details--reviews--count">(6)</div>
-          <div className="card--details--reviews--location">•USA</div>
+          <div className="card--details--reviews--location">• USA</div>
         </div>
         <div className="card--details--lesson-name">
           Life lessons with Katie Zaferes

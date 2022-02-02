@@ -19,10 +19,12 @@ body {
 .container {
   width: 60%;
   margin: 0px auto;
+  padding-left: 36px;
 }
 
 .nav--logo {
   width: 82px;
+  margin-left: -36px;
 }
 
 .hero--photoGrid {
@@ -31,12 +33,12 @@ body {
 }
 
 .hero--photoGrid--img {
-  width: 100%;
+  width: 395px;
 }
 
 .hero--text {
   text-align: left;
-  margin: 36px 0px auto 49px;
+  margin: 36px auto 49px 0px;
 }
 
 .hero--text h1 {
@@ -52,4 +54,75 @@ body {
   line-height: 110%;
   color: #222222;
   width: 320px;
+}
+
+.card {
+  width: 176px;
+  margin-right: 18px;
+}
+
+.card--img {
+  width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.card--img--status {
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  width: 35%;
+  height: 8%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  font-size: 10.24px;
+  text-align: center;
+  line-height: 19px;
+}
+
+.card--details--reviews {
+  display: flex;
+  align-items: center;
+  height: 14px;
+}
+
+.card--details--reviews--star {
+  width: 14px;
+}
+
+.card--details--reviews--rating {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 2px;
+}
+
+.card--details--reviews--count {
+  font-weight: 300;
+  color: #918e9b;
+  margin-left: 2px;
+  font-size: 12px;
+}
+
+.card--details--reviews--location {
+  margin-left: 2px;
+  margin-right: auto;
+  font-weight: 300;
+  color: #918e9b;
+  font-size: 12px;
+}
+
+.card--details--lesson-name {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  color: #222222;
+  margin-top: 8px;
+}
+
+.card--details--price {
+  margin-top: 8px;
+  font-size: 12px;
 }
