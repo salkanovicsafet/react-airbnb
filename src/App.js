@@ -3,15 +3,17 @@ import Hero from "./components/Hero";
 import Card from "./components/Card";
 import experiences from "./data/data.js";
 
-const experiencesMapped = experiences.map((x) => {
+const cards = experiences.map((x) => {
   return (
     <Card
+      key={x.id}
       img={x.coverImg}
       rating={x.stats.rating}
       reviewCount={x.stats.reviewCount}
-      country={x.location}
+      location={x.location}
       title={x.title}
       price={x.price}
+      openSpots={x.openSpots}
     />
   );
 });
@@ -21,7 +23,7 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
-      <div className="container">{experiencesMapped}</div>
+      <div className="container cards">{cards}</div>
     </>
   );
 }

@@ -1,6 +1,9 @@
 import Star from "../assets/images/Star.png";
 
 export default function Card(props) {
+  let statusText;
+  if (props.location === "Online") statusText = "ONLINE";
+  if (props.openSpots === 0) statusText = "SOLD OUT";
   return (
     <div className="card">
       <div className="image-wrapper">
@@ -9,7 +12,7 @@ export default function Card(props) {
           alt={props.img}
           className="card--img"
         />
-        <div class="card--img--status">SOLD OUT</div>
+        {statusText && <div className="card--img--status">{statusText}</div>}
       </div>
       <div className="card--details">
         <div className="card--details--reviews">
