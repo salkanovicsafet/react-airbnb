@@ -4,7 +4,7 @@ import Card from "./components/Card";
 import experiences from "./data/data.js";
 
 const cards = experiences.map((x) => {
-  return <Card key={x.id} item={x} />;
+  return <Card key={x.id} {...x} />;
 });
 
 export default function App() {
