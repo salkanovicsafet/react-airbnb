@@ -6,7 +6,7 @@ export default function Card(props) {
       <div className="image-wrapper">
         <img
           src={require(`../assets/images/${props.img}`)}
-          alt="Katie Zaferes"
+          alt={props.img}
           className="card--img"
         />
         <div class="card--img--status">SOLD OUT</div>
