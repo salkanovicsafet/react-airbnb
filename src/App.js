@@ -4,18 +4,7 @@ import Card from "./components/Card";
 import experiences from "./data/data.js";
 
 const cards = experiences.map((x) => {
-  return (
-    <Card
-      key={x.id}
-      img={x.coverImg}
-      rating={x.stats.rating}
-      reviewCount={x.stats.reviewCount}
-      location={x.location}
-      title={x.title}
-      price={x.price}
-      openSpots={x.openSpots}
-    />
-  );
+  return <Card key={x.id} item={x} />;
 });
 
 export default function App() {
